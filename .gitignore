@@ -263,6 +263,8 @@ pip-log.txt
 *.idb
 *.pdb
 *.db
+*.VC.db
+*.VC.VC.opendb
 
 # Kernel Module Compile Results
 *.mod*
