@@ -140,7 +140,7 @@
   <ItemGroup>
     <ClInclude Include="CreditScene.h" />
     <ClInclude Include="ImageManager.h" />
-    <ClInclude Include="KeyManager.h" />
+    <ClInclude Include="InputManager.h" />
     <ClInclude Include="MainProc.h" />
     <ClInclude Include="Object.h" />
     <ClInclude Include="Scene.h" />
@@ -155,7 +155,7 @@
   <ItemGroup>
     <ClCompile Include="CreditScene.cpp" />
     <ClCompile Include="ImageManager.cpp" />
-    <ClCompile Include="KeyManager.cpp" />
+    <ClCompile Include="InputManager.cpp" />
     <ClCompile Include="MainProc.cpp" />
     <ClCompile Include="Object.cpp" />
     <ClCompile Include="Scene.cpp" />

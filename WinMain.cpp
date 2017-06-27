@@ -91,8 +91,8 @@ LRESULT CALLBACK WindowProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lPara
 	switch (message)
 	{
 	case WM_CREATE: return main.Init(hWnd); break;
-	case WM_LBUTTONDOWN: return main.LButtonDown(); break;
-	case WM_LBUTTONUP: return main.LButtonUp(); break;
+	case WM_LBUTTONDOWN: return INPUTMANAGER->LButtonDown(); break;
+	case WM_LBUTTONUP: return INPUTMANAGER->LButtonUp(); break;
 	case WM_DESTROY: return main.Release(); break;
 	}
 
