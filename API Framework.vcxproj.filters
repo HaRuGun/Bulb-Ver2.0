@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Framework">
+      <UniqueIdentifier>{4a6ab23b-33b4-4b73-b546-bd50e0b0775c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Manager">
+      <UniqueIdentifier>{b0089336-c8a9-4b9d-83fc-78de25348576}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Manager\ImageManager">
+      <UniqueIdentifier>{7c4b1945-ad02-4b4e-8e5e-259c7fff6c38}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Manager\KeyManager">
+      <UniqueIdentifier>{b986b321-3ee9-4c23-ae6a-6cef0433f915}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Object">
+      <UniqueIdentifier>{279397f1-ec88-4b97-9d7b-73292b2bc290}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\MainProc">
+      <UniqueIdentifier>{e7136491-13c2-4787-ad84-49e532cd3bfe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Framework\Manager\SceneManager">
+      <UniqueIdentifier>{79aa5564-0987-4689-b5de-1cc21d92df6c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Manager\SceneManager\Scene">
+      <UniqueIdentifier>{4f2ecd81-0863-4089-b225-ba51424a00ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\GameScene">
+      <UniqueIdentifier>{9aae1dfb-c65e-45f3-89ce-f87becdddd5d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="SimpleFunction.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="KeyManager.h">
+      <Filter>Framework\Manager\KeyManager</Filter>
+    </ClInclude>
+    <ClInclude Include="ImageManager.h">
+      <Filter>Framework\Manager\ImageManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Object.h">
+      <Filter>Framework\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="MainProc.h">
+      <Filter>소스 파일\MainProc</Filter>
+    </ClInclude>
+    <ClInclude Include="WinMain.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneManager.h">
+      <Filter>Framework\Manager\SceneManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene.h">
+      <Filter>Framework\Manager\SceneManager\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="StartScene.h">
+      <Filter>소스 파일\GameScene</Filter>
+    </ClInclude>
+    <ClInclude Include="Singleton.h">
+      <Filter>Framework\Manager</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="KeyManager.cpp">
+      <Filter>Framework\Manager\KeyManager</Filter>
+    </ClCompile>
+    <ClCompile Include="Object.cpp">
+      <Filter>Framework\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="ImageManager.cpp">
+      <Filter>Framework\Manager\ImageManager</Filter>
+    </ClCompile>
+    <ClCompile Include="MainProc.cpp">
+      <Filter>소스 파일\MainProc</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>헤더 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="WinMain.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneManager.cpp">
+      <Filter>Framework\Manager\SceneManager</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene.cpp">
+      <Filter>Framework\Manager\SceneManager\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="StartScene.cpp">
+      <Filter>소스 파일\GameScene</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
