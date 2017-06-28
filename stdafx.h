@@ -21,7 +21,7 @@
 #include "SimpleFunction.h"
 
 #include "ImageManager.h"
-#include "KeyManager.h"
+#include "InputManager.h"
 
 #include "Object.h"
 

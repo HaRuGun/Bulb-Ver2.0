@@ -6,9 +6,8 @@ int Main::Init(HWND hWnd)
 {
 	IMAGEMANAGER->Init(hWnd);
 	SCENEMANAGER->Init();
+	INPUTMANAGER->Init();
 
-	curLBState = false;
-	lastLBState = curLBState;
 	/* [ INIT START ] */
 
 	stScene = new StartScene;
@@ -24,14 +23,9 @@ int Main::Init(HWND hWnd)
 // 매 프레임마다 호출되는 함수
 int Main::Update(HWND hWnd)
 {
-	::GetCursorPos(&mousePos);
-	::ScreenToClient(hWnd, &mousePos);
-	/* [ UPDATE START] */
-	
+	INPUTMANAGER->Update(hWnd);
 	stScene->Update();
 
-	/* [ UPDATE END] */
-	lastLBState = curLBState;
 
 	return 0;
 }
@@ -67,44 +61,11 @@ int Main::Release()
 	// 매니저 클래스 해제
 	IMAGEMANAGER->Release();
 	SCENEMANAGER->Release();
+	INPUTMANAGER->Release();
 
 	PostQuitMessage(0);
 	exit(0);
 	return 0;
-}
-
-
-///////////////////////////
-// Mouse
-
-int Main::LButtonDown()
-{
-	curLBState = true;
-	return 1;
-}
-
-
-int Main::LButtonUp()
-{
-	curLBState = false;
-	return 1;
-}
-
-
-BOOL Main::LButtonClick(Object *hit)
-{
-	if (!curLBState)
-		return false;
-
-	if (mousePos.x >= hit->GetX() && mousePos.x <= hit->GetX() + hit->GetWidth()
-		&& mousePos.y >= hit->GetY() && mousePos.y <= hit->GetY() + hit->GetHeight())
-	{
-		return true;
-	}
-	else
-	{
-		return false;
-	}
 }
 
 

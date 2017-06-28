@@ -18,9 +18,6 @@
     <Filter Include="Framework\Manager\ImageManager">
       <UniqueIdentifier>{7c4b1945-ad02-4b4e-8e5e-259c7fff6c38}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Framework\Manager\KeyManager">
-      <UniqueIdentifier>{b986b321-3ee9-4c23-ae6a-6cef0433f915}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Framework\Object">
       <UniqueIdentifier>{279397f1-ec88-4b97-9d7b-73292b2bc290}</UniqueIdentifier>
     </Filter>
@@ -40,8 +37,13 @@
     <Filter Include="소스 파일\GameScene">
       <UniqueIdentifier>{9aae1dfb-c65e-45f3-89ce-f87becdddd5d}</UniqueIdentifier>
     </Filter>
+<<<<<<< HEAD
     <Filter Include="소스 파일\Character">
       <UniqueIdentifier>{66a84382-07a3-49e2-8506-498d5256c628}</UniqueIdentifier>
+=======
+    <Filter Include="Framework\Manager\InputManager">
+      <UniqueIdentifier>{b986b321-3ee9-4c23-ae6a-6cef0433f915}</UniqueIdentifier>
+>>>>>>> master
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -53,9 +55,6 @@
     </ClInclude>
     <ClInclude Include="targetver.h">
       <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="KeyManager.h">
-      <Filter>Framework\Manager\KeyManager</Filter>
     </ClInclude>
     <ClInclude Include="ImageManager.h">
       <Filter>Framework\Manager\ImageManager</Filter>
@@ -84,14 +83,16 @@
     <ClInclude Include="CreditScene.h">
       <Filter>소스 파일\GameScene</Filter>
     </ClInclude>
+<<<<<<< HEAD
     <ClInclude Include="Character.h">
       <Filter>소스 파일\Character</Filter>
+=======
+    <ClInclude Include="InputManager.h">
+      <Filter>Framework\Manager\InputManager</Filter>
+>>>>>>> master
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="KeyManager.cpp">
-      <Filter>Framework\Manager\KeyManager</Filter>
-    </ClCompile>
     <ClCompile Include="Object.cpp">
       <Filter>Framework\Object</Filter>
     </ClCompile>
@@ -119,8 +120,13 @@
     <ClCompile Include="CreditScene.cpp">
       <Filter>소스 파일\GameScene</Filter>
     </ClCompile>
+<<<<<<< HEAD
     <ClCompile Include="Character.cpp">
       <Filter>소스 파일\Character</Filter>
+=======
+    <ClCompile Include="InputManager.cpp">
+      <Filter>Framework\Manager\InputManager</Filter>
+>>>>>>> master
     </ClCompile>
   </ItemGroup>
 </Project>
