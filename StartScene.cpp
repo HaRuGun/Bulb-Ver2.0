@@ -12,7 +12,7 @@ void StartScene::Init()
 	objCredit->Init("./Resource/ui/main/credit/main credit basics.bmp", RGB(255, 8, 255), 256, 128, 295, 387);
 
 	objStart = new Object;
-	objStart->Init("./Resource/ui/main/start/main start basics.bmp", RGB(255, 8, 255), 256, 128, 295, 327);
+	objStart->Init("./Resource/ui/main/start/main start basics.bmp", RGB(255, 0, 255), 178, 45, 323, 366);
 }
 
 
