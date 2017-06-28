@@ -10,12 +10,15 @@ int Main::Init(HWND hWnd)
 
 	/* [ INIT START ] */
 
+<<<<<<< HEAD
 	stScene = new StartScene;
 	stScene->Init();
 	cdScene->Init();
 	SCENEMANAGER->SetScene(stScene);
 
 
+=======
+>>>>>>> master
 	/* [ INIT END ] */
 	act = true;
 	return 0;
@@ -26,7 +29,11 @@ int Main::Init(HWND hWnd)
 int Main::Update(HWND hWnd)
 {
 	INPUTMANAGER->Update(hWnd);
+<<<<<<< HEAD
 
+=======
+	SCENEMANAGER->Update();
+>>>>>>> master
 
 	return 0;
 }
@@ -40,6 +47,10 @@ int Main::Render()
 	IMAGEMANAGER->SetBackground(CurrentBackground);
 	/* [ DRAW SRART ] */
 
+<<<<<<< HEAD
+=======
+	SCENEMANAGER->Render();
+>>>>>>> master
 
 	/* [ DRAW END ] */
 	IMAGEMANAGER->RenderOff();
@@ -53,6 +64,10 @@ int Main::Release()
 	act = false;
 	/* [ RELEASE START] */
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> master
 	/* [ RELEASE END] */
 
 	// 매니저 클래스 해제

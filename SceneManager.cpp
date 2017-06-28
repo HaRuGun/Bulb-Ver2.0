@@ -4,24 +4,29 @@
 void SceneManager::Init()
 {
 	currentScene = nullptr;
+
+	stScene = new StartScene;
+	stScene->Init();
+	SetScene(stScene);
 }
 
 
 void SceneManager::Update()
 {
-
+	GetCurrentScene()->Update();
 }
 
 
 void SceneManager::Render()
 {
-
+	GetCurrentScene()->Render();
 }
 
 
 void SceneManager::Release()
 {
-
+	stScene->Release();
+	delete(stScene);
 }
 
 
@@ -43,4 +48,9 @@ void SceneManager::SetScene(Scene *nextScene)
 Scene* SceneManager::GetCurrentScene()
 {
 	return currentScene;
+}
+
+Scene* SceneManager::GetStartScene()
+{
+	return stScene;
 }
