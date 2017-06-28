@@ -24,12 +24,15 @@ int WINAPI WinMain(HINSTANCE hInstance,
 
 	RegisterClassEx(&wc);
 
+	RECT wr = { 0, 0, SCREEN_WIDTH, SCREEN_HEIGHT };
+	AdjustWindowRect(&wr, WS_OVERLAPPEDWINDOW, FALSE);
+
 	hWnd = CreateWindowEx(NULL,
 		"WindowClass",
 		"Window name",
 		WS_OVERLAPPEDWINDOW,
-		0, 0,
-		SCREEN_WIDTH, SCREEN_HEIGHT,
+		100, 50,
+		wr.right - wr.left, wr.bottom - wr.top,
 		NULL,
 		NULL,
 		hInstance,
@@ -91,8 +94,8 @@ LRESULT CALLBACK WindowProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lPara
 	switch (message)
 	{
 	case WM_CREATE: return main.Init(hWnd); break;
-	case WM_LBUTTONDOWN: return main.LButtonDown(); break;
-	case WM_LBUTTONUP: return main.LButtonUp(); break;
+	case WM_LBUTTONDOWN: return INPUTMANAGER->LButtonDown(); break;
+	case WM_LBUTTONUP: return INPUTMANAGER->LButtonUp(); break;
 	case WM_DESTROY: return main.Release(); break;
 	}
 

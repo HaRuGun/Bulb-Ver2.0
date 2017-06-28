@@ -8,16 +8,25 @@ enum KETSTATE
 	KS_NONE, KS_DOWN, KS_STAY, KS_UP
 };
 
-class KeyManager
-	: public Singleton<KeyManager>
+class InputManager
+	: public Singleton<InputManager>
 {
 private:
 	bool keyState[KEYMAX];
 	bool prevKeyState[KEYMAX];
 
+	POINT mousePos;
+	BOOL curLBState;
+	BOOL lastLBState;
+
 public:
 	void Init();
-	void Update();
+	void Update(HWND hWnd);
+	void Release();
+
+	int LButtonDown();
+	int LButtonUp();
+	BOOL LButtonClick(Object *hit);
 
 	inline int GetKeyState(int key)
 	{
@@ -37,8 +46,8 @@ public:
 		}
 	}
 
-	KeyManager() {}
-	~KeyManager() {}
+	InputManager() {}
+	~InputManager() {}
 };
 
-#define KEYMANAGER KeyManager::GetSingleton()
+#define INPUTMANAGER InputManager::GetSingleton()

@@ -7,12 +7,9 @@ private:
 	// 메니저 포인터 선언
 	ImageManager *igmg;
 	SceneManager *scmg;
+	InputManager *ipmg;
 
 	BOOL act;
-
-	POINT mousePos;
-	BOOL curLBState;
-	BOOL lastLBState;
 
 	/* [ OBJECT START ] */
 
@@ -25,10 +22,6 @@ public:
 	int Update(HWND hWnd);
 	int Render();
 	int Release();
-
-	int LButtonDown();
-	int LButtonUp();
-	BOOL LButtonClick(Object *hit);
 
 	BOOL GetAct();
 
