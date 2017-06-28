@@ -13,7 +13,7 @@ private:
 
 	/* [ OBJECT START ] */
 
-	StartScene *stScene;
+
 
 	/* [ OBJECT END ] */
 

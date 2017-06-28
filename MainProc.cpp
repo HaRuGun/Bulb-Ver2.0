@@ -10,10 +10,6 @@ int Main::Init(HWND hWnd)
 
 	/* [ INIT START ] */
 
-	stScene = new StartScene;
-	stScene->Init();
-	SCENEMANAGER->SetScene(stScene);
-
 	/* [ INIT END ] */
 	act = true;
 	return 0;
@@ -24,8 +20,7 @@ int Main::Init(HWND hWnd)
 int Main::Update(HWND hWnd)
 {
 	INPUTMANAGER->Update(hWnd);
-	stScene->Update();
-
+	SCENEMANAGER->Update();
 
 	return 0;
 }
@@ -39,7 +34,7 @@ int Main::Render()
 	IMAGEMANAGER->SetBackground(CurrentBackground);
 	/* [ DRAW SRART ] */
 
-	stScene->Render();
+	SCENEMANAGER->Render();
 
 	/* [ DRAW END ] */
 	IMAGEMANAGER->RenderOff();
@@ -53,8 +48,6 @@ int Main::Release()
 	act = false;
 	/* [ RELEASE START] */
 
-	stScene->Release();
-	delete(stScene);
 
 	/* [ RELEASE END] */
 

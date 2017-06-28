@@ -8,6 +8,9 @@ class SceneManager
 protected:
 	Scene *currentScene;
 
+	// Scenes
+	StartScene *stScene;
+
 public:
 	void Init();
 	void Update();
@@ -15,7 +18,9 @@ public:
 	void Release();
 
 	void SetScene(Scene *nextScene);
+
 	Scene* GetCurrentScene();
+	Scene* GetStartScene();
 
 	SceneManager() {}
 	virtual ~SceneManager() {}
