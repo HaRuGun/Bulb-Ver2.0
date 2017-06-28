@@ -40,6 +40,9 @@
     <Filter Include="소스 파일\GameScene">
       <UniqueIdentifier>{9aae1dfb-c65e-45f3-89ce-f87becdddd5d}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\Character">
+      <UniqueIdentifier>{66a84382-07a3-49e2-8506-498d5256c628}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -81,6 +84,9 @@
     <ClInclude Include="CreditScene.h">
       <Filter>소스 파일\GameScene</Filter>
     </ClInclude>
+    <ClInclude Include="Character.h">
+      <Filter>소스 파일\Character</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="KeyManager.cpp">
@@ -112,6 +118,9 @@
     </ClCompile>
     <ClCompile Include="CreditScene.cpp">
       <Filter>소스 파일\GameScene</Filter>
+    </ClCompile>
+    <ClCompile Include="Character.cpp">
+      <Filter>소스 파일\Character</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

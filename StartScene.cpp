@@ -3,16 +3,16 @@
 
 void StartScene::Init()
 {
-	SetBackground("./Resource/ui/background/main background.bmp");
-
-	objQuit = new Object;
-	objQuit->Init("./Resource/ui/main/quit/main quit basics.bmp", RGB(255, 8, 255), 256, 128, 295, 452);
-
-	objCredit = new Object;
-	objCredit->Init("./Resource/ui/main/credit/main credit basics.bmp", RGB(255, 8, 255), 256, 128, 295, 387);
+	SetBackground("./Resource/background/main_background.bmp");
 
 	objStart = new Object;
-	objStart->Init("./Resource/ui/main/start/main start basics.bmp", RGB(255, 0, 255), 178, 45, 323, 366);
+	objStart->Init("./Resource/ui/main/start/main_start_basics.bmp", RGB(255, 8, 255), 178, 45, 323, 366);
+
+	objCredit = new Object;
+	objCredit->Init("./Resource/ui/main/credit/main_credit_basics.bmp", RGB(255, 8, 255), 178, 45, 323, 441);
+
+	objQuit = new Object;
+	objQuit->Init("./Resource/ui/main/quit/main_quit_basics.bmp", RGB(255, 8, 255), 178, 45, 323, 513);
 }
 
 

@@ -16,6 +16,7 @@ private:
 
 	/* [ OBJECT START ] */
 
+	CHAROBJ *Character;
 	StartScene *stScene;
 
 	/* [ OBJECT END ] */
