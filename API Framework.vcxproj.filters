@@ -40,6 +40,12 @@
     <Filter Include="Framework\Manager\InputManager">
       <UniqueIdentifier>{b986b321-3ee9-4c23-ae6a-6cef0433f915}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\Character">
+      <UniqueIdentifier>{0bdf3409-7284-499f-977b-0d0e018a1f7b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\GameObject">
+      <UniqueIdentifier>{c8120efd-1c50-460c-b9eb-51066c07f5f8}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -81,6 +87,12 @@
     <ClInclude Include="InputManager.h">
       <Filter>Framework\Manager\InputManager</Filter>
     </ClInclude>
+    <ClInclude Include="Character.h">
+      <Filter>소스 파일\Character</Filter>
+    </ClInclude>
+    <ClInclude Include="BodyScene.h">
+      <Filter>소스 파일\GameScene</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Object.cpp">
@@ -112,6 +124,12 @@
     </ClCompile>
     <ClCompile Include="InputManager.cpp">
       <Filter>Framework\Manager\InputManager</Filter>
+    </ClCompile>
+    <ClCompile Include="Character.cpp">
+      <Filter>소스 파일\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="BodyScene.cpp">
+      <Filter>소스 파일\GameScene</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

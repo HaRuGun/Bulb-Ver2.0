@@ -14,6 +14,7 @@ private:
 	/* [ OBJECT START ] */
 
 	StartScene *stScene;
+	CreditScene *cdScene;
 
 	/* [ OBJECT END ] */
 

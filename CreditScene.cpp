@@ -6,7 +6,7 @@ void CreditScene::Init()
 	SetBackground("./Resource/ui/background/credit background.bmp");
 
 	objMain = new Object;
-	objMain->Init("./Resource/ui/main/credit/home/home basics.bmp", RGB(255, 8, 255), 256, 128, 52, 52);
+	objMain->Init("./Resource/ui/main/credit/home/home basics.bmp", RGB(255, 8, 255), 41, 58, 36, 20);
 
 }
 
