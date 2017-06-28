@@ -24,12 +24,15 @@ int WINAPI WinMain(HINSTANCE hInstance,
 
 	RegisterClassEx(&wc);
 
+	RECT wr = { 0, 0, SCREEN_WIDTH, SCREEN_HEIGHT };
+	AdjustWindowRect(&wr, WS_OVERLAPPEDWINDOW, FALSE);
+
 	hWnd = CreateWindowEx(NULL,
 		"WindowClass",
 		"Window name",
 		WS_OVERLAPPEDWINDOW,
-		0, 0,
-		SCREEN_WIDTH, SCREEN_HEIGHT,
+		100, 50,
+		wr.right - wr.left, wr.bottom - wr.top,
 		NULL,
 		NULL,
 		hInstance,
