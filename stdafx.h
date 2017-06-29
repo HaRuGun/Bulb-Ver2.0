@@ -36,6 +36,8 @@
 #include "StartScene.h"
 #include "CreditScene.h"
 #include "IngameScene.h"
+#include "StartScene.h"
+#include "CreditScene.h"
 #include "SceneManager.h"
 
 #include "MainProc.h"
