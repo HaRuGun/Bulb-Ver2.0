@@ -93,6 +93,9 @@
     <ClInclude Include="BodyScene.h">
       <Filter>소스 파일\GameScene</Filter>
     </ClInclude>
+    <ClInclude Include="BodyButton.h">
+      <Filter>소스 파일\GameObject</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Object.cpp">
@@ -130,6 +133,9 @@
     </ClCompile>
     <ClCompile Include="BodyScene.cpp">
       <Filter>소스 파일\GameScene</Filter>
+    </ClCompile>
+    <ClCompile Include="BodyButton.cpp">
+      <Filter>소스 파일\GameObject</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

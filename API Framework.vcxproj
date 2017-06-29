@@ -138,6 +138,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="BodyButton.h" />
     <ClInclude Include="BodyScene.h" />
     <ClInclude Include="Character.h" />
     <ClInclude Include="CreditScene.h" />
@@ -155,6 +156,7 @@
     <ClInclude Include="WinMain.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="BodyButton.cpp" />
     <ClCompile Include="BodyScene.cpp" />
     <ClCompile Include="Character.cpp" />
     <ClCompile Include="CreditScene.cpp" />

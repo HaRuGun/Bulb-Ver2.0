@@ -13,13 +13,6 @@ private:
 
 	/* [ OBJECT START ] */
 
-<<<<<<< HEAD
-	StartScene *stScene;
-	CreditScene *cdScene;
-=======
-
->>>>>>> master
-
 	/* [ OBJECT END ] */
 
 public:

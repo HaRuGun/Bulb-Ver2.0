@@ -28,11 +28,11 @@
 #include "Character.h"
 
 #include "Scene.h"
-#include "SceneManager.h"
 
 #include "StartScene.h"
 #include "CreditScene.h"
 #include "BodyScene.h"
+#include "SceneManager.h"
 
 #include "MainProc.h"
 #include "WinMain.h"

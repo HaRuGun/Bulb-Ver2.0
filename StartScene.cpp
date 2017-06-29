@@ -20,7 +20,7 @@ void StartScene::Update()
 {
 	objQuit->Update();
 	objCredit->Update();
-	objStart->Update(); 
+	objStart->Update();
 }
 
 

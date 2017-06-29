@@ -1,6 +1,7 @@
 #pragma once
 #include "Singleton.h"
 
+class StartScene;
 
 class SceneManager
 	: public Singleton<SceneManager>
@@ -10,6 +11,8 @@ protected:
 
 	// Scenes
 	StartScene *stScene;
+	CreditScene *cdScene;
+	BodyScene *bdScene;
 
 public:
 	void Init();

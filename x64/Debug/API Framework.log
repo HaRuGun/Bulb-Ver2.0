@@ -14,5 +14,6 @@ c:\users\hw\documents\github\bulb-ver2.0\imagemanager.cpp(88): warning C4244: '�
   Character.cpp
   BodyScene.cpp
   코드를 생성하고 있습니다...
+  LINK : C:\Users\HW\Documents\GitHub\Bulb-Ver2.0\x64\Debug\API Framework.exe을(를) 찾을 수 없거나 마지막 증분 링크에 의해 빌드되지 않았습니다. 전체 링크를 수행하고 있습니다.
   API Framework.vcxproj -> C:\Users\HW\Documents\GitHub\Bulb-Ver2.0\x64\Debug\API Framework.exe
   API Framework.vcxproj -> C:\Users\HW\Documents\GitHub\Bulb-Ver2.0\x64\Debug\API Framework.pdb (Full PDB)

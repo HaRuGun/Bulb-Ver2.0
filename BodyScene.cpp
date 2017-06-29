@@ -1,6 +1,5 @@
 #include "stdafx.h"
 
-
 void BodyScene::Init()
 {
 	SetBackground("./Resource/ui/background/ingame_background.bmp");
