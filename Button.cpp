@@ -143,7 +143,7 @@ void Button::Init()
 void Button::Update()
 {
 	prevTypeIndex = typeIndex;
-	typeIndex = new TypeIndex->tossType();
+//	typeIndex = new TypeIndex->tossType();
 	if (prevTypeIndex != typeIndex)
 	{
 		page = 0;
@@ -151,7 +151,7 @@ void Button::Update()
 
 	if (INPUTMANAGER->LButtonClick(&NextPageButton))
 	{
-		if ((typeIndex == 0) || (typeIndex == 4) || ((typeIndex==3)&&page>=1)) {}
+		if ((typeIndex == 0) || (typeIndex == 4) || ((typeIndex == 3) && page >= 1)) {}
 		else page++;
 
 	}
@@ -162,47 +162,50 @@ void Button::Update()
 		else page--;
 	}
 
+	int i = 0;
 
 	switch (typeIndex)
 	{
 	case 0:
-		for (int i = page * 9; i < page * 9 + BODY_MAX % 9; i++)
+		for (i = page * 9; i < page * 9 + BODY_MAX % 9; i++)
 		{
 			if (INPUTMANAGER->LButtonClick(&BodyButton[i]))
 			{
-				
+
 			}
-		break;
+			break;
 	case 1:
-		for (int i = page * 9; i < page * 9 + EYE_MAX % 9; i++)
+		for (i = page * 9; i < page * 9 + EYE_MAX % 9; i++)
 		{
 			EyeButton[i].Render();
 		}
 		break;
 	case 2:
-		for (int i = page * 9; i < page * 9 + MOUSE_MAX % 9; i++)
+		for (i = page * 9; i < page * 9 + MOUSE_MAX % 9; i++)
 		{
 			MouseButton[i].Render();
 		}
 		break;
 	case 3:
-		for (int i = page * 9; i < page * 9 + HAND_MAX % 9; i++)
+		for (i = page * 9; i < page * 9 + HAND_MAX % 9; i++)
 		{
 			HandButton[i].Render();
 		}
 		break;
 	case 4:
-		for (int i = page * 9; i < page * 9 + ITEM1_MAX % 9; i++)
+		for (i = page * 9; i < page * 9 + ITEM1_MAX % 9; i++)
 		{
 			Item1Button[i].Render();
 		}
 		break;
 	case 5:
-		for (int i = page * 9; i < page * 9 + ITEM2_MAX % 9; i++)
+		for (i = page * 9; i < page * 9 + ITEM2_MAX % 9; i++)
 		{
 			Item2Button[i].Render();
 		}
 		break;
+		}
+	}
 }
 
 void Button::Render()

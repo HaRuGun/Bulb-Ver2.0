@@ -48,7 +48,7 @@ int WINAPI WinMain(HINSTANCE hInstance,
 
 	hWnd = CreateWindowEx(NULL,
 		"WindowClass",
-		"Window name",
+		"Bulb",
 		windowStyle,
 		0, 0,
 		wr.right - wr.left, wr.bottom - wr.top,
