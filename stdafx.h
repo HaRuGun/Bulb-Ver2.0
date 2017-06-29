@@ -29,9 +29,13 @@
 
 #include "Scene.h"
 
+#include "Button.h"
+
+#include "TypeIndex.h"
+
 #include "StartScene.h"
 #include "CreditScene.h"
-#include "BodyScene.h"
+#include "IngameScene.h"
 #include "SceneManager.h"
 
 #include "MainProc.h"

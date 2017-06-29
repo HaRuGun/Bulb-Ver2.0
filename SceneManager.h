@@ -12,7 +12,7 @@ protected:
 	// Scenes
 	StartScene *stScene;
 	CreditScene *cdScene;
-	BodyScene *bdScene;
+	IngameScene *igScene;
 
 public:
 	void Init();
