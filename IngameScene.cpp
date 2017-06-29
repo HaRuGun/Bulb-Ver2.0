@@ -1,6 +1,6 @@
 #include "stdafx.h"
 
-void BodyScene::Init()
+void IngameScene::Init()
 {
 	SetBackground("./Resource/ui/background/ingame_background.bmp");
 
@@ -10,14 +10,14 @@ void BodyScene::Init()
 }
 
 
-void BodyScene::Update()
+void IngameScene::Update()
 {
 	objMain->Update();
 
 }
 
 
-void BodyScene::Render()
+void IngameScene::Render()
 {
 	objMain->Render();
 	IMAGEMANAGER->DrawObject(objMain);
@@ -25,7 +25,7 @@ void BodyScene::Render()
 }
 
 
-void BodyScene::Release()
+void IngameScene::Release()
 {
 	objMain->Release();
 	delete(objMain);

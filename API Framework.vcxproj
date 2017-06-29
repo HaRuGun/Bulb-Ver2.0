@@ -138,8 +138,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="BodyButton.h" />
-    <ClInclude Include="BodyScene.h" />
+    <ClInclude Include="Button.h" />
+    <ClInclude Include="IngameScene.h" />
     <ClInclude Include="Character.h" />
     <ClInclude Include="CreditScene.h" />
     <ClInclude Include="ImageManager.h" />
@@ -153,11 +153,12 @@
     <ClInclude Include="StartScene.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
+    <ClInclude Include="TypeIndex.h" />
     <ClInclude Include="WinMain.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="BodyButton.cpp" />
-    <ClCompile Include="BodyScene.cpp" />
+    <ClCompile Include="Button.cpp" />
+    <ClCompile Include="IngameScene.cpp" />
     <ClCompile Include="Character.cpp" />
     <ClCompile Include="CreditScene.cpp" />
     <ClCompile Include="ImageManager.cpp" />
@@ -173,6 +174,7 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="TypeIndex.cpp" />
     <ClCompile Include="WinMain.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

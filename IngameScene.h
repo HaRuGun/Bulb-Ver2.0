@@ -1,5 +1,5 @@
 #pragma once
-class BodyScene :
+class IngameScene :
 	public Scene
 {
 protected:
@@ -12,6 +12,6 @@ public:
 	void Render();
 	void Release();
 
-	BodyScene() {}
-	~BodyScene() {}
+	IngameScene() {}
+	~IngameScene() {}
 };

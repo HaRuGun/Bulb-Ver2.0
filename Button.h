@@ -20,6 +20,7 @@ protected:
 	};
 
 	int typeIndex;
+	int prevTypeIndex;
 	int page;
 
 	Object BodyButton[3];
@@ -28,6 +29,8 @@ protected:
 	Object HandButton[11];
 	Object Item1Button[9];
 	Object Item2Button[27];
+	Object NextPageButton;
+	Object PrevPageButton;
 
 public:
 	void Init();

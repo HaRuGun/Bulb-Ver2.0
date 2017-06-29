@@ -154,7 +154,7 @@ void CharObj::Init()
 
 void CharObj::Update()
 {
-
+	
 }
 
 void CharObj::Render()

@@ -66,9 +66,6 @@
     <ClInclude Include="MainProc.h">
       <Filter>소스 파일\MainProc</Filter>
     </ClInclude>
-    <ClInclude Include="WinMain.h">
-      <Filter>소스 파일</Filter>
-    </ClInclude>
     <ClInclude Include="SceneManager.h">
       <Filter>Framework\Manager\SceneManager</Filter>
     </ClInclude>
@@ -90,11 +87,17 @@
     <ClInclude Include="Character.h">
       <Filter>소스 파일\Character</Filter>
     </ClInclude>
-    <ClInclude Include="BodyScene.h">
+    <ClInclude Include="Button.h">
+      <Filter>소스 파일\GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="IngameScene.h">
       <Filter>소스 파일\GameScene</Filter>
     </ClInclude>
-    <ClInclude Include="BodyButton.h">
+    <ClInclude Include="TypeIndex.h">
       <Filter>소스 파일\GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="WinMain.h">
+      <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -131,10 +134,13 @@
     <ClCompile Include="Character.cpp">
       <Filter>소스 파일\Character</Filter>
     </ClCompile>
-    <ClCompile Include="BodyScene.cpp">
+    <ClCompile Include="Button.cpp">
+      <Filter>소스 파일\GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="IngameScene.cpp">
       <Filter>소스 파일\GameScene</Filter>
     </ClCompile>
-    <ClCompile Include="BodyButton.cpp">
+    <ClCompile Include="TypeIndex.cpp">
       <Filter>소스 파일\GameObject</Filter>
     </ClCompile>
   </ItemGroup>
