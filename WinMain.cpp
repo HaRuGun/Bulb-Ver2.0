@@ -13,7 +13,6 @@ int WINAPI WinMain(HINSTANCE hInstance,
 	WNDCLASSEX wc;
 
 	ZeroMemory(&wc, sizeof(WNDCLASSEX));
-
 	wc.cbSize = sizeof(WNDCLASSEX);
 	wc.style = CS_HREDRAW | CS_VREDRAW;
 	wc.lpfnWndProc = WindowProc;
@@ -21,17 +20,37 @@ int WINAPI WinMain(HINSTANCE hInstance,
 	wc.hCursor = LoadCursor(NULL, IDC_ARROW);
 	wc.hbrBackground = (HBRUSH)COLOR_WINDOW;
 	wc.lpszClassName = "WindowClass";
-
 	RegisterClassEx(&wc);
 
 	RECT wr = { 0, 0, SCREEN_WIDTH, SCREEN_HEIGHT };
-	AdjustWindowRect(&wr, WS_OVERLAPPEDWINDOW, FALSE);
+	DWORD windowStyle;
+	
+	int resoultions = MessageBox(NULL, "전체화면으로 실행할까요?", "Bulb", MB_OKCANCEL);
+	if (resoultions == IDOK)
+	{
+		windowStyle = WS_POPUP;
+		AdjustWindowRect(&wr, WS_POPUP, true);
+
+		DEVMODE devMode;
+		ZeroMemory(&devMode, sizeof(DEVMODE));
+		devMode.dmSize = sizeof(DEVMODE);
+		devMode.dmBitsPerPel = 32;
+		devMode.dmPelsWidth = SCREEN_WIDTH;
+		devMode.dmPelsHeight = SCREEN_HEIGHT;
+		devMode.dmFields = DM_BITSPERPEL | DM_PELSWIDTH | DM_PELSHEIGHT;
+		ChangeDisplaySettings(&devMode, CDS_FULLSCREEN);
+	}
+	else if (resoultions == IDCANCEL)
+	{
+		windowStyle = WS_OVERLAPPEDWINDOW;
+		AdjustWindowRect(&wr, WS_OVERLAPPEDWINDOW, FALSE);
+	}
 
 	hWnd = CreateWindowEx(NULL,
 		"WindowClass",
 		"Window name",
-		WS_OVERLAPPEDWINDOW,
-		100, 50,
+		windowStyle,
+		0, 0,
 		wr.right - wr.left, wr.bottom - wr.top,
 		NULL,
 		NULL,
